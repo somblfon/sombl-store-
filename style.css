@@ -49,16 +49,17 @@ img { display:block; max-width:100%; }
 
 /* ═══════════════════════════ APP SHELL ═══════════════════════════ */
 #app {
-  width:var(--app-w); max-width:100vw;
-  height:100vh; max-height:100vh;
+  width:100%; max-width:var(--app-w);
+  height:100%; height:100dvh; max-height:100dvh;
   background:var(--bg);
   display:flex; flex-direction:column;
   overflow:hidden; position:relative;
   transition:background var(--ease);
   box-shadow:0 30px 90px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.04);
+  margin:0 auto;
 }
 @media(min-width:640px){
-  #app{ border-radius:36px; height:92vh; max-height:910px; }
+  #app{ border-radius:36px; height:92dvh; max-height:910px; }
 }
 
 /* ═══════════════════════════ TOP BAR ═══════════════════════════ */
